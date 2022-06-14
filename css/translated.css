@@ -1,4 +1,35 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*Barra de Navegacion*/
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  align-items: center;
+  background-color: white; }
+  header .logo img {
+    height: 90px; }
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px; }
+    header nav a {
+      padding: 20px;
+      text-decoration: none;
+      color: black; }
+      header nav a:hover {
+        color: gray; }
+
+
 /* index */
+
 /*imagen de fondo*/
 .background--image {
   background-image: url("../img/274647564_4812480722196383_652342768473959873_n.jpg");
@@ -55,11 +86,11 @@
         cursor: pointer;
         border: 0px;
         margin-bottom: 10px; }
-        .indexInfo #cards .card button :hover {
+        .indexInfo #cards .card button:hover {
           background-color: #DE6A41;
           color: black;
           transition: all 0.2s ease; }
-      .indexInfo #cards .card :hover {
+      .indexInfo #cards .card:hover {
         transform: scale(1.03);
         transition: all 0.2s ease; }
       .indexInfo #cards .card .card-image {
@@ -132,7 +163,7 @@
       margin: 10px;
       border-radius: 1rem;
       height: 400px; }
-      #cards .card .card:hover {
+      #cards .card:hover {
         transform: none; }
       #cards .card .card-image {
         background-color: green;
@@ -161,3 +192,24 @@
           color: white;
           cursor: pointer;
           border: 0px; } }
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 150px;
+  line-height: 30px; }
+  footer ul {
+    display: flex;
+    list-style: none; }
+  footer i {
+    color: black;
+    font-size: large;
+    padding: 10px; }
+    footer i:hover {
+      font-size: larger;
+      color: #DE6A41;
+      transition: all 0.5s ease; }

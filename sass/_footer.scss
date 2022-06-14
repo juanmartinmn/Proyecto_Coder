@@ -1,0 +1,29 @@
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    line-height: 30px;
+
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    i{
+        color: black;
+        font-size: large;
+        padding: 10px;
+
+        &:hover{
+            font-size: larger;
+            color: $dark-orange;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+

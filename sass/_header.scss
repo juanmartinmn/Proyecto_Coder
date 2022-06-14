@@ -1,0 +1,36 @@
+/*Barra de Navegacion*/
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+
+    .logo{
+        img{
+            height: 90px;
+        }
+    }
+    
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        
+        a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: gray;
+            }
+            
+        }
+    }
+}
+
+/*Fin de barra de navegacion*/
