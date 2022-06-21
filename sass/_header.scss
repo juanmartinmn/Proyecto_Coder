@@ -33,4 +33,46 @@ header{
     }
 }
 
+@media (max-width:1000px) {
+        /* Header */
+
+        header{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: space-between;
+            height: 130px;
+            width: 100%;
+            align-items: center;
+            background-color: white;
+
+            nav{
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px;
+
+                a{
+                    padding: 11px;
+                    text-decoration: none;
+                    color:black;
+        
+                    &:hover{
+                        color: gray;
+                    }
+                }
+            }
+
+            .logo img{
+                height: 70px;
+            }
+            
+
+        }
+        
+
+
+
+        
+
+}
 /*Fin de barra de navegacion*/

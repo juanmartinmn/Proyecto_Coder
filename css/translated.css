@@ -5,6 +5,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
+.button, .indexInfo #cards .card button {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  margin-bottom: 10px; }
+  .button:hover, .indexInfo #cards .card button:hover {
+    background-color: #DE6A41;
+    color: black;
+    transition: all 0.2s ease; }
+
 /*Barra de Navegacion*/
 header {
   display: flex;
@@ -27,9 +40,32 @@ header {
       header nav a:hover {
         color: gray; }
 
+@media (max-width: 1000px) {
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    height: 130px;
+    width: 100%;
+    align-items: center;
+    background-color: white; }
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px; }
+      header nav a {
+        padding: 11px;
+        text-decoration: none;
+        color: black; }
+        header nav a:hover {
+          color: gray; }
+    header .logo img {
+      height: 70px; } }
 
+/*Fin de barra de navegacion*/
 /* index */
-
 /*imagen de fondo*/
 .background--image {
   background-image: url("../img/274647564_4812480722196383_652342768473959873_n.jpg");
@@ -53,7 +89,6 @@ header {
     flex-direction: column;
     padding: 30px; }
     .indexInfo #index-text h1 {
-      font-size: 4rem;
       color: #DE6A41; }
     .indexInfo #index-text p {
       font-size: 1.2rem;
@@ -78,23 +113,10 @@ header {
       width: 270px;
       margin: 10px;
       height: 400px; }
-      .indexInfo #cards .card button {
-        width: 100px;
-        height: 30px;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-        border: 0px;
-        margin-bottom: 10px; }
-        .indexInfo #cards .card button:hover {
-          background-color: #DE6A41;
-          color: black;
-          transition: all 0.2s ease; }
       .indexInfo #cards .card:hover {
         transform: scale(1.03);
         transition: all 0.2s ease; }
       .indexInfo #cards .card .card-image {
-        background-color: green;
         height: 170px;
         margin-bottom: 15px;
         background-size: cover;
@@ -114,7 +136,7 @@ header {
           padding: 20px;
           margin: 10px; }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   /* Index */
   /* Background */
   .background--image {
@@ -184,14 +206,7 @@ header {
         justify-content: center; }
         #cards .card .card-text p {
           padding: 20px;
-          margin: 10px; }
-        #cards .card .card-text button {
-          width: 100px;
-          height: 30px;
-          background-color: black;
-          color: white;
-          cursor: pointer;
-          border: 0px; } }
+          margin: 10px; } }
 
 /*Footer*/
 footer {
@@ -201,15 +216,19 @@ footer {
   align-items: center;
   background-color: white;
   height: 150px;
-  line-height: 30px; }
+  line-height: 10px; }
   footer ul {
-    display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none; }
-  footer i {
-    color: black;
-    font-size: large;
-    padding: 10px; }
-    footer i:hover {
-      font-size: larger;
-      color: #DE6A41;
-      transition: all 0.5s ease; }
+    footer ul li {
+      display: inline-block;
+      margin-left: -2px;
+      margin-right: 0em; }
+    footer ul li i {
+      color: black;
+      font-size: large; }
+      footer ul li i:hover {
+        font-size: larger;
+        color: #DE6A41;
+        transition: all 0.2s ease; }

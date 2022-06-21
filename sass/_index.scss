@@ -28,7 +28,6 @@
             padding: 30px;
 
             h1{
-                font-size: 4rem;
                 color: $dark-orange;
             }
         
@@ -64,19 +63,7 @@
                 height: 400px;
 
                 button{
-                    width: 100px;
-                    height: 30px;
-                    background-color: black;
-                    color: white;
-                    cursor: pointer;
-                    border: 0px;
-                    margin-bottom: 10px;
-
-                    &:hover{
-                        background-color: $dark-orange;
-                        color: black;
-                        transition: all 0.2s ease;
-                    }
+                    @extend .button;
                 }
 
                 &:hover{
@@ -85,7 +72,6 @@
                 }
 
                 .card-image{
-                    background-color: green;
                     height: 170px;
                     margin-bottom: 15px;
                     background-size: cover;
@@ -120,12 +106,10 @@
 
             }
         }
-
-
     }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     /* Index */
 
         /* Background */
@@ -225,15 +209,7 @@
                             padding: 20px;
                             margin: 10px;
                         }
-                        button{
-                            width: 100px;
-                            height: 30px;
-                            background-color: black;
-                            color: white;
-                            cursor: pointer;
-                            border: 0px;
-                        
-                    }
+
                 }
             }
         }

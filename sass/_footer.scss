@@ -6,24 +6,29 @@ footer{
     align-items: center;
     background-color: white;
     height: 150px;
-    line-height: 30px;
+    line-height: 10px;
 
     ul{
-        display: flex;
-        list-style: none;
-    }
-    
-    i{
-        color: black;
-        font-size: large;
-        padding: 10px;
+        @include horizontal-list;
+        
+        li{
 
-        &:hover{
-            font-size: larger;
-            color: $dark-orange;
-            transition: all 0.5s ease;
+            i{
+                color: black;
+                font-size: large;
+        
+                &:hover{
+                    font-size: larger;
+                    color: $dark-orange;
+                    transition: all 0.2s ease;
+                }
+            }
         }
+
     }
 }
+
+    
+
 
 
