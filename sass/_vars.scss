@@ -6,7 +6,9 @@ $dark-white: rgb(245, 245, 245);
 $headings: (
     h1: 4em,
     h2: 3em,
-    h3: 2em
+    h3: 1.5em
 );
 
 $h1: map-get($headings,h1);
+$h2: map-get($headings,h2);
+$h3: map-get($headings,h3);

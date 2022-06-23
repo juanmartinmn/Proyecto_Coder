@@ -1,0 +1,39 @@
+/* Ubicacion */
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-white;
+    padding: 5%;
+
+    h1{
+        color: $dark-orange;
+    }
+
+    p{
+        color: rgb(15, 15, 15);
+    }
+
+    article{   
+        a img{
+            border-radius: 3rem;
+            height: 250px;
+        }
+    } 
+}
+
+@media(min-width:769px){
+    .ubicacion{
+        padding: 15%;
+
+        article{   
+            a img{
+                border-radius: 3rem;
+                height: 500px;
+            }
+        } 
+    }   
+}
+
+

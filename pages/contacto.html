@@ -7,8 +7,7 @@
     <meta name="description" content="reservar en casa croix">
     <meta name="keywords" content="reservas, casa croix, restaurant, salon de eventos">
     <title>Casa Croix: Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="./css/translated.css">
+    <link rel="stylesheet" href="../css/translated.css">
     <script src="https://kit.fontawesome.com/8cf87ffdcf.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,7 +27,7 @@
     
     <nav>
         <a href="../index.html">Inicio</a>
-        <a href="./nosotros.html">Nosotros</a>                
+        <a href="./nosotros.html">Galeria</a>                
         <a href="./contacto.html">Contacto</a>
         <a href="./menu.html">Menú</a>
         <a href="./ubicacion.html">Ubicación</a>
@@ -36,7 +35,7 @@
 
 </header>
 
-    <div class="background--image">
+    <div class="background--contacto">
         
     </div>
 
@@ -54,37 +53,37 @@
         </a><br><br>
 
         <article class="formulario">
-            <br><h2>Reservas</h2><br><br>
+            <h2>Reservas</h2>
 
             <!--Formulario de Reservas-->
             <form action="">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" required placeholder="Juan Molina"> <br><br>
+                <label for="nombre" class="form--titles">Nombre y Apellido</label>
+                <input type="text" name="nombre" required placeholder="Juan Molina"> 
     
-                <label for="telefono">Telefono</label>
-                <input type="number" name="telefono" required placeholder="381 567 789"> <br><br>
+                <label for="telefono" class="form--titles">Telefono</label>
+                <input type="number" name="telefono" required placeholder="381 567 789"> 
     
-                <label for="cantidad">Cantidad de Personas</label>
-                <input type="number" name="cantidad" required placeholder="4"> <br><br>
+                <label for="cantidad" class="form--titles">Cantidad de Personas</label>
+                <input type="number" name="cantidad" required placeholder="4"> 
     
-                <label for="fecha">Fecha</label>
-                <input type="date" name="fecha" required> <br><br>
+                <label for="fecha" class="form--titles">Fecha</label>
+                <input type="date" name="fecha" required>
     
-                <p>Horario</p><br>
-    
-                <input type="radio" name="horario"value="desayuno" id="desayuno">
-                <label for="desayuno">Desayuno</label> <br><br>
-    
-                <input type="radio" name="horario"value="almuerzo" id="almuerzo">
-                <label for="almuerzo">Almuerzo</label> <br><br>
-    
-                <input type="radio" name="horario"value="merienda" id="merienda">
-                <label for="merienda">Merienda</label> <br><br>
-    
-                <input type="radio" name="horario"value="cena" id="cena">
-                <label for="cena">Cena</label> <br><br>
-    
-                <input type="submit" value="Enviar" id="enviar"> <br><br>
+                <label for="horario" class="form--titles">Horario</label>
+                
+                <label for="desayuno">Desayuno</label> 
+                <input type="radio" name="horario"value="desayuno" id="desayuno" class="radio--button">
+                
+                <label for="almuerzo">Almuerzo</label> 
+                <input type="radio" name="horario"value="almuerzo" id="almuerzo" class="radio--button">
+                
+                <label for="merienda">Merienda</label> 
+                <input type="radio" name="horario"value="merienda" id="merienda" class="radio--button">
+                
+                <label for="cena">Cena</label> 
+                <input type="radio" name="horario"value="cena" id="cena" class="radio--button">
+
+                <input type="submit" value="Enviar" id="enviar"> 
     
             </form>
         </article>

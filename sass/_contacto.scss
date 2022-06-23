@@ -1,0 +1,71 @@
+.background--contacto{
+        @include background--image;
+        background-image:url('../img/reservas.jpg');
+        height: 60vh;
+    }
+
+    .contacto{
+        background-color: $dark-white;
+        text-align: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 30px;
+    
+            /*Article*/
+            .formulario{
+                background-color: $dark-white;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    label, input{
+                        margin: 5px;
+                    }
+
+                    .form--titles{
+                        text-decoration: underline;
+                        font-weight: bold;
+                        color: $dark-orange;
+                    }
+
+                    .radio--button{
+                        height: 20px;
+                        width: 20px;
+                        background-color: white;
+                        border-radius: 50%;
+                    }
+                }
+
+        
+                    /*Botones y etc del form*/
+                #enviar{
+                    @extend .button;
+                }
+            }
+    
+    
+        a{
+            text-decoration: none;
+            color: $dark-orange;
+            
+            i{
+                font-size: 40px;
+    
+                &:hover{
+                    @extend .hover--animation;
+                }
+            }   
+        }
+    }
+
+@media(min-width:769px){
+    .background--contacto{
+        @include background--image;
+        background-image:url('../img/reservas.jpg');
+        height: 100vh;
+    }
+}
+    

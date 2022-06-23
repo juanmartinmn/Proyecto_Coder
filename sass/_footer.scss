@@ -14,13 +14,11 @@ footer{
         li{
 
             i{
-                color: black;
+                color: $dark-orange;
                 font-size: large;
         
                 &:hover{
-                    font-size: larger;
-                    color: $dark-orange;
-                    transition: all 0.2s ease;
+                    @extend .hover--animation;
                 }
             }
         }

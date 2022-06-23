@@ -1,6 +1,10 @@
-*{
-    margin: 0%;
-    padding: 0%;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 body{
@@ -13,6 +17,10 @@ body{
 @import "mixins";
 @import "header";
 @import "index";
+@import "nosotros";
+@import "contacto";
+@import "menu";
+@import "ubicacion";
 @import "footer";
 
 
